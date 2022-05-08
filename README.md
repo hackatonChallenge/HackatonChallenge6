@@ -2,9 +2,11 @@
 
 DataBase Structure
 
+```sql
+
 USE [master]
 GO
-/****** Object:  Database [Hackaton]    Script Date: 8/5/2022 02:54:23 ******/
+
 CREATE DATABASE [Hackaton]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -303,3 +305,5 @@ USE [master]
 GO
 ALTER DATABASE [Hackaton] SET  READ_WRITE 
 GO
+
+```

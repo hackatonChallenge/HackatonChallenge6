@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{479972F3-EF59-47B4-9DCF-83729B4032D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DACOVIDWEB</RootNamespace>
+    <AssemblyName>DACOVIDWEB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryDonationsDA.cs" />
+    <Compile Include="CovidWeb2020.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CovidWeb2020.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CovidWeb2020.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CovidWeb2020.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CovidWeb2020.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="datos.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatosDA.cs" />
+    <Compile Include="DonationDA.cs" />
+    <Compile Include="fuentes.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hackaton.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hackaton.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hackaton.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hackaton.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hackaton.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="labels_anos_estudio.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_area.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_cat_indicador.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_clima_educativo.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_grupo_edad.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_indicador.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_nivel_ingresos.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_pais.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_region.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="labels_sexo.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pais_ano.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>Hackaton.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_donation.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_symptoms.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_donation.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_role.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_symptoms.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_attribute.cs">
+      <DependentUpon>CovidWeb2020.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="CovidWeb2020.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CovidWeb2020.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CovidWeb2020.edmx.diagram">
+      <DependentUpon>CovidWeb2020.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Hackaton.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Hackaton.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Hackaton.edmx.diagram">
+      <DependentUpon>Hackaton.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CovidWeb2020.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CovidWeb2020.edmx</DependentUpon>
+      <LastGenOutput>CovidWeb2020.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CovidWeb2020.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CovidWeb2020.edmx</DependentUpon>
+      <LastGenOutput>CovidWeb2020.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hackaton.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hackaton.edmx</DependentUpon>
+      <LastGenOutput>Hackaton.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Hackaton.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Hackaton.edmx</DependentUpon>
+      <LastGenOutput>Hackaton.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

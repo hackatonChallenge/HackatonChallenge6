@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="157f8236604149a3bee1f3c432e5564c" Name="Diagram1">
+        <EntityTypeShape EntityType="HackatonModel.datos" Width="1.5" PointX="6" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.fuentes" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_area" Width="1.5" PointX="3.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_cat_indicador" Width="1.5" PointX="1.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_clima_educativo" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_indicador" Width="1.5" PointX="3.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_nivel_ingresos" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_pais" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_sexo" Width="1.5" PointX="3.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_anos_estudio" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_grupo_edad" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.labels_region" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HackatonModel.pais_ano" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="HackatonModel.FK_datos_labels_area" ManuallyRouted="false" />
+        <AssociationConnector Association="HackatonModel.FK_datos_labels_indicador" ManuallyRouted="false" />
+        <AssociationConnector Association="HackatonModel.FK_datos_labels_pais" ManuallyRouted="false" />
+        <AssociationConnector Association="HackatonModel.FK_datos_labels_sexo" ManuallyRouted="false" />
+        <AssociationConnector Association="HackatonModel.FK_fuentes_labels_pais" ManuallyRouted="false" />
+        <AssociationConnector Association="HackatonModel.FK_labels_indicador_labels_cat_indicador1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
